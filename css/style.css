@@ -1,0 +1,240 @@
+* {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 300;
+  color: white;
+}
+
+html, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#262626));
+  background-image: linear-gradient(#141414, #262626);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.scary {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0;
+}
+
+.icons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 15px;
+}
+
+.icons a {
+  display: block;
+  padding: 6px 7px;
+  border: 2px solid white;
+  border-radius: 50%;
+  line-height: 13px;
+}
+
+.icons a:hover {
+  border: 2px solid #fa7199;
+}
+
+.icons a:hover ion-icon {
+  color: #fa7199;
+}
+
+button {
+  position: relative;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 90vw;
+  margin: 10px auto;
+  border-radius: 15px;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:nth-child(1),
+button:nth-child(3) {
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+
+button:nth-child(2),
+button:nth-child(4) {
+  background: -webkit-gradient(linear, left top, right top, from(#fa7199), color-stop(#f5ce62), color-stop(#e43603), to(#fa7199));
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+
+button:nth-child(1):before,
+button:nth-child(2):before,
+button:nth-child(3):before,
+button:nth-child(4):before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 15px;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+button:nth-child(1):hover:before,
+button:nth-child(2):hover:before,
+button:nth-child(3):hover:before,
+button:nth-child(4):hover:before {
+  opacity: 1;
+  z-index: -1;
+}
+
+button:hover {
+  z-index: 1;
+  -webkit-animation: glow 8s linear infinite;
+          animation: glow 8s linear infinite;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.logo {
+  width: 80vw;
+  height: 50vh;
+  border-radius: 20px;
+  background-image: url("../../assets/img/logo.jpeg");
+  background-size: cover;
+}
+
+section {
+  margin-top: 25px;
+}
+
+.left {
+  width: 80%;
+  height: 50%;
+}
+
+.left {
+  width: 80%;
+  height: 50%;
+}
+
+form input {
+  height: 60px;
+  width: 80vw;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  text-align: left;
+}
+
+form button {
+  width: 80vw;
+}
+
+footer {
+  height: 100px;
+  line-height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .icons {
+    width: 30%;
+  }
+  button {
+    display: inline-block;
+    width: 40%;
+  }
+  nav {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .logo {
+    width: 50vw;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button {
+    width: 22%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
