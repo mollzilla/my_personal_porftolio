@@ -10,8 +10,29 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7199), color-stop(#f5ce62), to(#03a9f4));
+  background-image: linear-gradient(#fa7199, #f5ce62, #03a9f4);
+  padding-bottom: 10px;
+}
+
+.container {
+  max-width: 980px;
+}
+
+header {
+  margin-top: 15px;
+}
+
+header, section, footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#262626));
   background-image: linear-gradient(#141414, #262626);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 95%;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.3);
+          box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
 }
 
 a {
@@ -26,7 +47,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 80px;
 }
 
 h2 {
@@ -86,7 +107,7 @@ button {
   display: block;
   height: 60px;
   line-height: 60px;
-  width: 90vw;
+  width: 80vw;
   margin: 10px auto;
   border-radius: 15px;
   background: #111;
@@ -173,7 +194,11 @@ button:hover {
 }
 
 section {
-  margin-top: 25px;
+  margin-top: 15px;
+}
+
+section:last-of-type {
+  margin-bottom: 15px;
 }
 
 .left {
@@ -184,6 +209,113 @@ section {
 .left {
   width: 80%;
   height: 50%;
+}
+
+.grandparent {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DBF3FA), to(#CFF0CC));
+  background-image: linear-gradient(#DBF3FA, #CFF0CC);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(255, 182, 193, 0.15);
+          box-shadow: 3px 3px 3px 3px rgba(255, 182, 193, 0.15);
+}
+
+.parent {
+  position: relative;
+}
+
+.bubble {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  -webkit-transition: height 1s, width 1s, line-height 1s, font-size 1s;
+  transition: height 1s, width 1s, line-height 1s, font-size 1s;
+  color: black;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: pink;
+  opacity: 0.45;
+  -webkit-transition: height 1s, width 1s, opacity 1s;
+  transition: height 1s, width 1s, opacity 1s;
+}
+
+.bubble:hover {
+  height: 250px;
+  width: 250px;
+  line-height: 250px;
+  font-size: 22px;
+}
+
+.bubble:hover:before {
+  height: 250px;
+  width: 250px;
+  opacity: .65;
+}
+
+.parent-html {
+  position: absolute;
+  bottom: -50px;
+}
+
+.parent-css {
+  position: absolute;
+  bottom: -80px;
+  left: 120px;
+}
+
+.parent-javascript {
+  position: absolute;
+  bottom: 160px;
+  left: -40px;
+}
+
+.parent-node {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+}
+
+.parent-mongo {
+  position: absolute;
+  bottom: -90px;
+  left: 300px;
+}
+
+.parent-influx {
+  position: absolute;
+  bottom: 15px;
+  left: 230px;
+}
+
+.parent-graphql {
+  position: absolute;
+  bottom: 100px;
+  right: -55px;
+}
+
+.parent-mysql {
+  position: absolute;
+  bottom: 45px;
+  left: -50px;
+}
+
+.parent-laravel {
+  position: absolute;
+  bottom: 010px;
+  left: 345px;
 }
 
 form input {
@@ -204,8 +336,8 @@ form button {
 }
 
 footer {
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -225,6 +357,12 @@ footer {
     width: 50vw;
     height: 50vh;
   }
+  .input {
+    display: inline-block;
+  }
+  form input {
+    width: 40vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -235,6 +373,17 @@ footer {
   }
   .button {
     width: 22%;
+    font-size: 18px;
+  }
+  .logo {
+    width: 400px;
+    height: 350px;
+  }
+  form input {
+    width: 500px;
+  }
+  form .submit {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
