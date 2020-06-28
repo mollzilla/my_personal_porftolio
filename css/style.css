@@ -467,21 +467,26 @@ footer {
   margin: 20px auto;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#119B57), to(#32FF3D));
   background-image: linear-gradient(#119B57, #32FF3D);
   display: inline-block;
   padding: 13px 15px;
   border-radius: 20px;
-  -webkit-transition: background-image .5s;
-  transition: background-image .5s;
-  -webkit-box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
-          box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+  -webkit-box-shadow: 3px 3px 3px rgba(255, 166, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(255, 166, 0, 0.3);
+  font-weight: bold;
 }
 
 .btn-intro:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6A00), to(#FF9700));
-  background-image: linear-gradient(#FF6A00, #FF9700);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6A00), to(#ffd000));
+  background-image: linear-gradient(#FF6A00, #ffd000);
+  -webkit-box-shadow: 1px 2px 2px 2px rgba(50, 255, 61, 0.45);
+          box-shadow: 1px 2px 2px 2px rgba(50, 255, 61, 0.45);
 }
 
 .btn-intro:first-of-type {
