@@ -1,7 +1,7 @@
 * {
   margin: 0 auto;
   text-align: center;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Hind Siliguri', sans-serif;
   font-weight: 300;
   color: white;
 }
@@ -70,6 +70,7 @@ h2 {
 
 .scary {
   font-family: 'Balsamiq Sans', cursive;
+  text-transform: uppercase;
 }
 
 
@@ -191,16 +192,21 @@ p {
   width: 90%;
   text-align: center;
   max-width: 700px;
-  line-height: 20px;
+  line-height: 25px;
   padding: 20px 0;
 }
 
 section {
   margin-top:15px;
+  padding-top: 25px;
 
   &:last-of-type {
     margin-bottom: 15px;;
   }
+}
+
+article {
+  padding-top: 25px;
 }
 
 .grandparent {
@@ -299,6 +305,7 @@ section {
 .karliene-img {
     width: 100%;
     max-width: 800px;
+
 }
 
 form {

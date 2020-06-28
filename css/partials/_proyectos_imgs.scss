@@ -1,12 +1,14 @@
-#demo-react-app {
+.demo-proyecto {
   background-image: linear-gradient(#080808, #202020);
+  box-sizing: border-box;
+  padding: 25px 0;
 }
 
-.img-react-app-container {
+.subsection {
   display: flex;
 }
 
-.img-react-app {
+.proyectos-img {
   width: 100%;
   max-width: 600px; 
 }
