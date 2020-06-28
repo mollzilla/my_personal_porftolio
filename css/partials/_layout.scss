@@ -25,7 +25,9 @@ header, section, footer {
   box-sizing: border-box;
   width: 95%;
   padding: 20px;
-  box-shadow: 3px 3px 3px 3px rgba(255,255,255,0.3);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);  
   border-radius: 3px;
 }
 
@@ -96,15 +98,48 @@ ul {
     border: 2px solid white;
     border-radius: 50%;
     line-height: 13px;
+    transition: border .5s;
+  }
 
-    &:hover {
-      border: 2px solid #fa7199;
+  @mixin border-color-links($color) {
+    border: 2px solid $color;
+  }
+
+  li {
+    &:nth-child(1) a:hover {
+      @include border-color-links(#fa7199);
+
+      ion-icon {
+        color: #fa7199;
+       }
     }
 
-    &:hover ion-icon {
-      color: #fa7199;
-    }    
+    &:nth-child(2) a:hover {
+      @include border-color-links(#f5ce62);
+
+      ion-icon {
+        color: #f5ce62;
+      }
+    }
+
+    &:nth-child(3) a:hover {
+      @include border-color-links(#03a9f4);
+
+      ion-icon {
+        color: #03a9f4;
+      }
+    }
+    
+    &:nth-child(4) a:hover {
+      @include border-color-links(#f441a5);
+
+      ion-icon {
+        color: #f441a5;
+      }
+    }
+
   }
+
 }
 
 button {
@@ -226,6 +261,7 @@ article {
 }
 
 .bubble {
+  font-family: 'Balsamiq Sans', sans-serif;
   height: 200px;
   width: 200px;
   border-radius: 50%;

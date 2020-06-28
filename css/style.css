@@ -30,8 +30,8 @@ header, section, footer {
           box-sizing: border-box;
   width: 95%;
   padding: 20px;
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.3);
-          box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
 }
 
@@ -151,14 +151,40 @@ ul li {
   border: 2px solid white;
   border-radius: 50%;
   line-height: 13px;
+  -webkit-transition: border .5s;
+  transition: border .5s;
 }
 
-.icons a:hover {
+.icons li:nth-child(1) a:hover {
   border: 2px solid #fa7199;
 }
 
-.icons a:hover ion-icon {
+.icons li:nth-child(1) a:hover ion-icon {
   color: #fa7199;
+}
+
+.icons li:nth-child(2) a:hover {
+  border: 2px solid #f5ce62;
+}
+
+.icons li:nth-child(2) a:hover ion-icon {
+  color: #f5ce62;
+}
+
+.icons li:nth-child(3) a:hover {
+  border: 2px solid #03a9f4;
+}
+
+.icons li:nth-child(3) a:hover ion-icon {
+  color: #03a9f4;
+}
+
+.icons li:nth-child(4) a:hover {
+  border: 2px solid #f441a5;
+}
+
+.icons li:nth-child(4) a:hover ion-icon {
+  color: #f441a5;
 }
 
 button {
@@ -285,6 +311,7 @@ article {
 }
 
 .bubble {
+  font-family: 'Balsamiq Sans', sans-serif;
   height: 200px;
   width: 200px;
   border-radius: 50%;
