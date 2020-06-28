@@ -7,20 +7,28 @@
   height: 35px;
 }
 
+@mixin titles-100-days($font-size, $letter-spacing, $font-family) {
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size;
+}
+
 .title-100days {
-  margin-bottom: 20px;
+  @include titles-100-days(12px, 3px, 'Nunito Sans');
   text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
-  letter-spacing: 3px;
-  font-size: 12px;
   text-align: center;
+  // margin-bottom: 20px;
+  // font-family: 'Nunito Sans', sans-serif;
+  // letter-spacing: 3px;
+  // font-size: 12px;
 }
 
 .subtitle-100days {
-  margin-bottom: 20px;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: 'Hind Siliguri', sans-serif;
+  @include titles-100-days(20px, 1px, 'Hind Siliguri');
+  // margin-bottom: 20px;
+  // font-size: 20px;
+  // letter-spacing: 1px;
+  // font-family: 'Hind Siliguri', sans-serif;
 }
 
 %btn {

@@ -179,24 +179,19 @@ button {
   cursor: pointer;
 }
 
-button:nth-child(1),
-button:nth-child(3) {
+button:nth-child(1), button:nth-child(3) {
   background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
 }
 
-button:nth-child(2),
-button:nth-child(4) {
+button:nth-child(2), button:nth-child(4) {
   background: -webkit-gradient(linear, left top, right top, from(#fa7199), color-stop(#f5ce62), color-stop(#e43603), to(#fa7199));
   background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
   background-size: 400%;
 }
 
-button:nth-child(1):before,
-button:nth-child(2):before,
-button:nth-child(3):before,
-button:nth-child(4):before {
+button:nth-child(1):before, button:nth-child(2):before, button:nth-child(3):before, button:nth-child(4):before {
   content: '';
   position: absolute;
   background: inherit;
@@ -212,10 +207,7 @@ button:nth-child(4):before {
   transition: opacity 0.5s;
 }
 
-button:nth-child(1):hover:before,
-button:nth-child(2):hover:before,
-button:nth-child(3):hover:before,
-button:nth-child(4):hover:before {
+button:nth-child(1):hover:before, button:nth-child(2):hover:before, button:nth-child(3):hover:before, button:nth-child(4):hover:before {
   opacity: 1;
   z-index: -1;
 }
@@ -317,6 +309,7 @@ article {
 .parent-html {
   position: absolute;
   bottom: -50px;
+  left: 0;
 }
 
 .parent-css {
@@ -334,7 +327,7 @@ article {
 .parent-node {
   position: absolute;
   bottom: -50px;
-  right: -50px;
+  left: 435px;
 }
 
 .parent-mongo {
@@ -352,7 +345,7 @@ article {
 .parent-graphql {
   position: absolute;
   bottom: 130px;
-  right: -55px;
+  left: 450px;
 }
 
 .parent-mysql {
@@ -373,9 +366,8 @@ article {
   left: 90px;
 }
 
-.karliene-img {
-  width: 100%;
-  max-width: 800px;
+form {
+  position: relative;
 }
 
 form input {
@@ -393,6 +385,7 @@ form input {
 
 form button {
   width: 80vw;
+  position: relative;
 }
 
 footer {
@@ -432,8 +425,8 @@ footer {
     font-size: 18px;
   }
   .logo {
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 420px;
   }
   h1 {
     font-size: 90px;
@@ -457,19 +450,17 @@ footer {
 }
 
 .title-100days {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans";
   letter-spacing: 3px;
   font-size: 12px;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .subtitle-100days {
-  margin-bottom: 20px;
-  font-size: 20px;
+  font-family: "Hind Siliguri";
   letter-spacing: 1px;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 20px;
 }
 
 .btn-intro {
@@ -523,6 +514,6 @@ footer {
 
 .proyectos-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 }
 /*# sourceMappingURL=style.css.map */

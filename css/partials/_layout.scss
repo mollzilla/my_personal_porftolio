@@ -123,49 +123,51 @@ button {
   border: none;
   outline:none;
   cursor: pointer;
-}
 
-button:nth-child(1),
-button:nth-child(3)
-{
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-}
+  &:nth-child(1),
+  &:nth-child(3)
+  {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
 
-button:nth-child(2),
-button:nth-child(4) {
-  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
-  background-size: 400%;
-}
+  &:nth-child(2),
+  &:nth-child(4) {
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+  }
 
-button:nth-child(1):before,
-button:nth-child(2):before,
-button:nth-child(3):before,
-button:nth-child(4):before {
-  content: '';
-  position: absolute;
-  background: inherit;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  border-radius: 15px;
-  filter: blur(20px);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
 
-button:nth-child(1):hover:before,
-button:nth-child(2):hover:before,
-button:nth-child(3):hover:before,
-button:nth-child(4):hover:before {
-  opacity: 1;
-  z-index: -1;
-}
+  &:nth-child(1):before,
+  &:nth-child(2):before,
+  &:nth-child(3):before,
+  &:nth-child(4):before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 15px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
 
-button:hover {
-  z-index: 1;
-  animation: glow 8s linear infinite;
+  &:nth-child(1):hover:before,
+  &:nth-child(2):hover:before,
+  &:nth-child(3):hover:before,
+  &:nth-child(4):hover:before {
+    opacity: 1;
+    z-index: -1;
+  }
+
+  &:hover {
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
 }
 
 @keyframes glow {
@@ -178,7 +180,7 @@ button:hover {
 }
 
 .logo {
-  max-width: 500px;;
+  max-width: 500px;
 
   img {
   width: 80%;
@@ -243,72 +245,59 @@ article {
   }
 }
 
+@mixin bubble-mixin($bottom, $left) {
+  position:absolute;
+  bottom: $bottom;
+  left: $left;
+}
+
 .parent-html {
-  position: absolute;
-  bottom: -50px;
+  @include bubble-mixin(-50px, 0)
+  // position: absolute;
+  // bottom: -50px;
 }
 
 .parent-css {
-  position: absolute;
-  bottom: -80px;
-  left: 120px;
+  @include bubble-mixin(-80px, 120px)
+  // bottom: -80px;
+  // left: 120px;
 }
 
 .parent-javascript {
-  position: absolute;
-  bottom: 160px;
-  left: -40px;
+  @include bubble-mixin(160px,-40px)
 }
 
 .parent-node {
-  position: absolute;
-  bottom: -50px;
-  right: -50px;
+  @include bubble-mixin(-50px, 435px)
 }
 
 .parent-mongo {
-  position: absolute;
-  bottom: -90px;
-  left: 300px;
+  @include bubble-mixin(-90px, 300px)
 }
 
 .parent-influx {
-  position: absolute;
-  bottom: 15px;
-  left: 230px;
+  @include bubble-mixin(15px, 230px)
 }
 
 .parent-graphql {
-  position: absolute;
-  bottom: 130px;
-  right: -55px;
+  @include bubble-mixin(130px, 450px)
 }
 
 .parent-mysql {
-  position: absolute;
-  bottom: 45px;
-  left: -50px;
+  @include bubble-mixin(45px, -50px)
 }
 
 .parent-laravel {
-  position: absolute;
-  bottom: 80px;
-  left: 345px;
+  @include bubble-mixin(80px, 345px)
 }
 
 .parent-react {
-  position: absolute;
-  bottom: 50px;
-  left: 90px;
-}
-
-.karliene-img {
-    width: 100%;
-    max-width: 800px;
-
+  @include bubble-mixin(50px, 90px)
 }
 
 form {
+  position: relative;
+
   input {
     height: 60px;
     width: 80vw;
@@ -320,8 +309,10 @@ form {
     padding: 10px;
     text-align: left;
   }
+
   button {
     width: 80vw;
+    position:relative;
   }
 }
 
@@ -368,8 +359,8 @@ footer {
   }
 
   .logo {
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 420px;
   }
 
   h1 {
