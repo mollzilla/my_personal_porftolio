@@ -217,8 +217,8 @@ section:last-of-type {
   width: 600px;
   border-radius: 2px;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#DBF3FA), to(#CFF0CC));
-  background-image: linear-gradient(#DBF3FA, #CFF0CC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DBF3FA), to(#03a9f4));
+  background-image: linear-gradient(#DBF3FA, #03a9f4);
   -webkit-box-shadow: 3px 3px 3px 3px rgba(255, 182, 193, 0.15);
           box-shadow: 3px 3px 3px 3px rgba(255, 182, 193, 0.15);
 }
@@ -246,8 +246,8 @@ section:last-of-type {
   border-radius: 50%;
   top: 0;
   left: 0;
-  background: pink;
-  opacity: 0.45;
+  background: #fa7199;
+  opacity: 0.55;
   -webkit-transition: height 1s, width 1s, opacity 1s;
   transition: height 1s, width 1s, opacity 1s;
 }
@@ -262,7 +262,7 @@ section:last-of-type {
 .bubble:hover:before {
   height: 250px;
   width: 250px;
-  opacity: .65;
+  opacity: .67;
 }
 
 .parent-html {
@@ -302,7 +302,7 @@ section:last-of-type {
 
 .parent-graphql {
   position: absolute;
-  bottom: 100px;
+  bottom: 130px;
   right: -55px;
 }
 
@@ -314,8 +314,14 @@ section:last-of-type {
 
 .parent-laravel {
   position: absolute;
-  bottom: 010px;
+  bottom: 80px;
   left: 345px;
+}
+
+.parent-react {
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
 }
 
 form input {
