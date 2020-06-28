@@ -52,13 +52,16 @@ h1, h2, h3 {
 .h1-container  {
   position: relative;
   height: 120px;
+  width: 955;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   position: absolute;
-  // left: 21.5%;
   font-size: 75px;
   animation: titulo .85s;
+  margin: 0 auto;
 }
 
 h2 {
@@ -174,19 +177,22 @@ button:hover {
 }
 
 .logo {
-  width: 80vw;
-  height: 50vh;
+  max-width: 500px;;
+
+  img {
+  width: 80%;
   border-radius: 20px;
-  background-image: url("../../assets/img/logo.jpeg");
   background-size: cover;
+  }
 }
 
 p {
   padding: 15px auto;
-}
-
-.mi-stack {
-  margin: 15px;
+  width: 90%;
+  text-align: center;
+  max-width: 700px;
+  line-height: 20px;
+  padding: 20px 0;
 }
 
 section {
@@ -197,23 +203,10 @@ section {
   }
 }
 
-@mixin sides($side) {
-  width: 80%;
-  height: 50%;
-}
-
-.left {
-  @include sides(left);
-}
-
-.left {
-  @include sides(right);
-}
-
 .grandparent {
   position: relative;
   height:400px;
-
+  max-width: 600px;
   border-radius: 2px;
   overflow: hidden;
   background-image: linear-gradient(#DBF3FA, #03a9f4);
@@ -232,13 +225,14 @@ section {
   line-height: 200px;
   transition: height 1s, width 1s, line-height 1s, font-size 1s, opacity .5s;
   color: black;
-  background: #fa7199;
+  font-size: 20px;
+  background-image: radial-gradient(#ff48a5 30%, #fa7199 55%, wheat, purple, fuchsia);
   opacity: 0.55;
   &:hover {
     height: 250px;
     width: 250px;
     line-height:250px;
-    font-size: 22px;
+    font-size: 30px;
     opacity: .67;
   }
 }
@@ -302,6 +296,11 @@ section {
   left: 90px;
 }
 
+.karliene-img {
+    width: 100%;
+    max-width: 800px;
+}
+
 form {
   input {
     height: 60px;
@@ -339,15 +338,6 @@ footer {
     order: 0;
   }
 
-  .logo {
-    width: 50vw;
-    height: 50vh;
-  }
-
-  .grandparent {
-    width: 600px;
-  }
-
   .input {
     display: inline-block;
   }
@@ -376,7 +366,7 @@ footer {
   }
 
   h1 {
-    left: 31%;
+    font-size: 90px;
   }
 
   form {

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="icofont" horiz-adv-x="1000" >
+<font-face font-family="IcoFont" font-weight="400" font-style="Regular" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="spotify" horiz-adv-x="1000" unicode="&#xed6e;" d="M500 787c-242 0-437-195-437-437s195-438 437-438 438 196 438 438-196 437-438 437z m201-630c-8-13-25-17-38-10-102 63-232 77-384 43-15-4-29 5-33 20-3 15 6 29 21 33 167 38 309 21 425-49 13-8 17-25 9-37z m53 119c-10-16-31-21-47-12-117 73-297 94-436 51-18-5-37 5-42 23-6 18 4 37 22 43 159 48 357 25 492-58 16-10 21-31 11-47z m5 124c-141 83-374 91-508 50-22-6-45 6-51 28-7 21 5 44 27 51 154 46 411 37 574-59 19-11 25-37 14-56s-37-26-56-14z" />
+</font>
+</defs>
+</svg>

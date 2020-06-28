@@ -91,6 +91,13 @@ h1, h2, h3 {
 .h1-container {
   position: relative;
   height: 120px;
+  width: 955;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
@@ -98,6 +105,7 @@ h1 {
   font-size: 75px;
   -webkit-animation: titulo .85s;
           animation: titulo .85s;
+  margin: 0 auto;
 }
 
 h2 {
@@ -236,19 +244,22 @@ button:hover {
 }
 
 .logo {
-  width: 80vw;
-  height: 50vh;
+  max-width: 500px;
+}
+
+.logo img {
+  width: 80%;
   border-radius: 20px;
-  background-image: url("../../assets/img/logo.jpeg");
   background-size: cover;
 }
 
 p {
   padding: 15px auto;
-}
-
-.mi-stack {
-  margin: 15px;
+  width: 90%;
+  text-align: center;
+  max-width: 700px;
+  line-height: 20px;
+  padding: 20px 0;
 }
 
 section {
@@ -259,19 +270,10 @@ section:last-of-type {
   margin-bottom: 15px;
 }
 
-.left {
-  width: 80%;
-  height: 50%;
-}
-
-.left {
-  width: 80%;
-  height: 50%;
-}
-
 .grandparent {
   position: relative;
   height: 400px;
+  max-width: 600px;
   border-radius: 2px;
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#DBF3FA), to(#03a9f4));
@@ -293,7 +295,8 @@ section:last-of-type {
   -webkit-transition: height 1s, width 1s, line-height 1s, font-size 1s, opacity .5s;
   transition: height 1s, width 1s, line-height 1s, font-size 1s, opacity .5s;
   color: black;
-  background: #fa7199;
+  font-size: 20px;
+  background-image: radial-gradient(#ff48a5 30%, #fa7199 55%, wheat, purple, fuchsia);
   opacity: 0.55;
 }
 
@@ -301,7 +304,7 @@ section:last-of-type {
   height: 250px;
   width: 250px;
   line-height: 250px;
-  font-size: 22px;
+  font-size: 30px;
   opacity: .67;
 }
 
@@ -364,6 +367,11 @@ section:last-of-type {
   left: 90px;
 }
 
+.karliene-img {
+  width: 100%;
+  max-width: 800px;
+}
+
 form input {
   height: 60px;
   width: 80vw;
@@ -399,13 +407,6 @@ footer {
         -ms-flex-order: 0;
             order: 0;
   }
-  .logo {
-    width: 50vw;
-    height: 50vh;
-  }
-  .grandparent {
-    width: 600px;
-  }
   .input {
     display: inline-block;
   }
@@ -429,7 +430,7 @@ footer {
     height: 350px;
   }
   h1 {
-    left: 31%;
+    font-size: 90px;
   }
   form input {
     width: 500px;
@@ -497,5 +498,21 @@ footer {
   width: 60%;
   height: 36%;
   background-size: cover;
+}
+
+#demo-react-app {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#080808), to(#202020));
+  background-image: linear-gradient(#080808, #202020);
+}
+
+.img-react-app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-react-app {
+  width: 100%;
+  max-width: 600px;
 }
 /*# sourceMappingURL=style.css.map */
