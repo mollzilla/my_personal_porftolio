@@ -56,8 +56,8 @@ h1, h2, h3 {
 
 h1 {
   position: absolute;
-  left: 21.5%;
-  font-size: 80px;
+  // left: 21.5%;
+  font-size: 75px;
   animation: titulo .85s;
 }
 
@@ -213,7 +213,7 @@ section {
 .grandparent {
   position: relative;
   height:400px;
-  width: 600px;
+
   border-radius: 2px;
   overflow: hidden;
   background-image: linear-gradient(#DBF3FA, #03a9f4);
@@ -342,6 +342,10 @@ footer {
   .logo {
     width: 50vw;
     height: 50vh;
+  }
+
+  .grandparent {
+    width: 600px;
   }
 
   .input {

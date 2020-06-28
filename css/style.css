@@ -95,8 +95,7 @@ h1, h2, h3 {
 
 h1 {
   position: absolute;
-  left: 21.5%;
-  font-size: 80px;
+  font-size: 75px;
   -webkit-animation: titulo .85s;
           animation: titulo .85s;
 }
@@ -273,7 +272,6 @@ section:last-of-type {
 .grandparent {
   position: relative;
   height: 400px;
-  width: 600px;
   border-radius: 2px;
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#DBF3FA), to(#03a9f4));
@@ -405,6 +403,9 @@ footer {
     width: 50vw;
     height: 50vh;
   }
+  .grandparent {
+    width: 600px;
+  }
   .input {
     display: inline-block;
   }
@@ -436,5 +437,65 @@ footer {
   form .submit {
     width: 500px;
   }
+}
+
+#demo-100days {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#080808), to(#202020));
+  background-image: linear-gradient(#080808, #202020);
+}
+
+.logo-100days img {
+  height: 35px;
+}
+
+.title-100days {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.subtitle-100days {
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.btn-intro {
+  margin: 20px auto;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#119B57), to(#32FF3D));
+  background-image: linear-gradient(#119B57, #32FF3D);
+  display: inline-block;
+  padding: 13px 15px;
+  border-radius: 20px;
+  -webkit-transition: background-image .5s;
+  transition: background-image .5s;
+  -webkit-box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+          box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+}
+
+.btn-intro:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6A00), to(#FF9700));
+  background-image: linear-gradient(#FF6A00, #FF9700);
+}
+
+.btn-intro:first-of-type {
+  margin-right: 5px;
+}
+
+.btn-intro:last-of-type {
+  margin-left: 5px;
+}
+
+.img-intro-100days {
+  width: 60%;
+  height: 36%;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
