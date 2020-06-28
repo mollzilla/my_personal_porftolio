@@ -46,8 +46,59 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
+@-webkit-keyframes titulo {
+  0% {
+    top: -700px;
+  }
+  60% {
+    top: 0px;
+  }
+  70% {
+    top: -15px;
+  }
+  80% {
+    top: 0px;
+  }
+  90% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes titulo {
+  0% {
+    top: -700px;
+  }
+  60% {
+    top: 0px;
+  }
+  70% {
+    top: -15px;
+  }
+  80% {
+    top: 0px;
+  }
+  90% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.h1-container {
+  position: relative;
+  height: 120px;
+}
+
 h1 {
+  position: absolute;
+  left: 21.5%;
   font-size: 80px;
+  -webkit-animation: titulo .85s;
+          animation: titulo .85s;
 }
 
 h2 {
@@ -193,6 +244,14 @@ button:hover {
   background-size: cover;
 }
 
+p {
+  padding: 15px auto;
+}
+
+.mi-stack {
+  margin: 15px;
+}
+
 section {
   margin-top: 15px;
 }
@@ -233,23 +292,11 @@ section:last-of-type {
   border-radius: 50%;
   text-align: center;
   line-height: 200px;
-  -webkit-transition: height 1s, width 1s, line-height 1s, font-size 1s;
-  transition: height 1s, width 1s, line-height 1s, font-size 1s;
+  -webkit-transition: height 1s, width 1s, line-height 1s, font-size 1s, opacity .5s;
+  transition: height 1s, width 1s, line-height 1s, font-size 1s, opacity .5s;
   color: black;
-}
-
-.bubble:before {
-  content: '';
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
   background: #fa7199;
   opacity: 0.55;
-  -webkit-transition: height 1s, width 1s, opacity 1s;
-  transition: height 1s, width 1s, opacity 1s;
 }
 
 .bubble:hover {
@@ -257,11 +304,6 @@ section:last-of-type {
   width: 250px;
   line-height: 250px;
   font-size: 22px;
-}
-
-.bubble:hover:before {
-  height: 250px;
-  width: 250px;
   opacity: .67;
 }
 
@@ -384,6 +426,9 @@ footer {
   .logo {
     width: 400px;
     height: 350px;
+  }
+  h1 {
+    left: 31%;
   }
   form input {
     width: 500px;
