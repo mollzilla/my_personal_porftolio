@@ -393,6 +393,10 @@ article {
   left: 90px;
 }
 
+.mis-proyectos a {
+  color: fuchsia;
+}
+
 form {
   position: relative;
 }

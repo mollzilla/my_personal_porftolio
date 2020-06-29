@@ -331,6 +331,13 @@ article {
   @include bubble-mixin(50px, 90px)
 }
 
+.mis-proyectos {
+
+  a {
+    color: fuchsia;
+  }
+}
+
 form {
   position: relative;
 
