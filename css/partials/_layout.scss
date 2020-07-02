@@ -44,11 +44,17 @@ h1, h2, h3 {
 
 @keyframes titulo {
   0% {top: -700px;}
-  60% {top: 0px;}
-  70% {top: -15px;}
-  80% {top: 0px;}
-  90% {top: -5px;}
+  85% {top: -700px;}
+  88% {top: 0px;}
+  91% {top: -15px;}
+  94% {top: 0px;}
+  97% {top: -5px;}
   100% {top: 0px;}
+}
+
+@keyframes decoy {
+  0% {opacity:1}
+  100% {opacity:0}
 }
 
 .h1-container  {
@@ -62,8 +68,21 @@ h1, h2, h3 {
 h1 {
   position: absolute;
   font-size: 75px;
-  animation: titulo .85s;
-  margin: 0 auto;
+  animation: titulo 3s;
+}
+
+.decoy {
+  position:absolute;
+  animation: decoy .005s;
+  top: 80px;
+  animation-fill-mode: forwards;
+  animation-delay:2.6s;
+
+  h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 
 h2 {
